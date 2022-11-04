@@ -1,0 +1,68 @@
+body{
+    background-color: #BA9999;
+    font-family:'Times New Roman', Times, serif;
+    font-size:15px;
+    color: black;
+    /*max-width: 430px;*/
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+header p{
+    /*width : 30%;*/
+    display:inline-block;
+}
+
+main{
+    text-align: center; /*Pour aligner les enfants de main*/
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.image{
+    background-color: #d9d9d9 ;
+}
+
+img{
+    width: 33%; 
+    margin-top:5px;   
+}
+
+figcaption{
+    font-style: italic;
+}
+
+.container__list{
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;    
+    width:fit-content;
+}
+
+.container__list__item{
+    margin-bottom: 15px;
+}
+
+.container__list__item__space:nth-child(1){
+    display: inline-block;
+    /*width: 33%;*/
+}
+
+.posthume{
+    display:inline-block;
+    text-align: justify;
+}
+
+.posthume p span{
+    font-weight: bold;
+}
+footer {
+    text-align: right;
+    margin-right: 5px;
+}

@@ -1,1 +1,1 @@
-# c'est le read me du mini brief
+# Création d'une page WEB unique concernant la bibliographie de Ada Lovelace. Première programmeuse en 1840. 
