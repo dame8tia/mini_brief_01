@@ -66,3 +66,9 @@ footer {
     text-align: right;
     margin-right: 5px;
 }
+
+@media(min-width: 768px){
+    body{
+        font-size: 16px;
+    }
+}
