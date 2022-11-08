@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+
+        <title>Formulaire Bonus</title>
+    </head>
+
+    <body>
+        
+
+        <main>
+            <div class="fond">
+                
+                <div class="titre">
+                    <p>freeCodeCamp Survey Form</p>
+                    <p class="sous_titre">thanks you for taking the time to help us improve our plateform</p>
+                </div>
+
+                <div class="formulaire">
+
+                    <form  method="post" action ="action.php">
+
+                        <fieldset class="infos_generales">
+
+                            <label for="nom">Nom :</label>
+                            <br>
+                            <input type="text" id="nom" name="nom" size="50px">
+                            <br>
+                            <br>
+
+                            <label for="email">Email :</label>
+                            <br>
+                            <input type="email" id="email" name="email" size="50px">
+                            <br>
+                            <br>
+
+                            <label for="age">Age <span>(optional)</span>:</label>
+                            <br>
+                            <input type="integer" id="age" name="age" size="50px">
+                            <br>
+                            <br>  
+
+                        </fieldset>
+
+                        <fieldset class="current_role">
+                            <p class ="para_fieldset">Which option best describes your role ? </p>
+                            <select id="role" name="role" placeholder="Select current role" width="100px">
+                                <option value="vide"></option>
+                                <option value="manager">Manager</option>
+                                <option value="front">Developper Front</option>
+                                <option value="back">Developper back</option>
+                                <option value="full">Developper full</option>
+                            </select>
+
+                        </fieldset>
+
+                        <fieldset class="recommend">
+                            <p class ="para_fieldset">Would you recommend freeCodeCamp to a friend ?</p>
+                            <input type="radio" name="recommandation" value ="Oui">Definitely<br>
+                            <input type="radio" name="recommandation" value ="Non">Maybe<br>
+                            <input type="radio" name="recommandation" value ="Pas du tout">Not sure<br>
+
+                        </fieldset>
+
+                        <fieldset class="favorite_feature">
+                            <p class ="para_fieldset">What is your favorite feature of freeCodeCamp ?</p>
+                            <select id="favorite" name="favorite" placeholder="Select feature" width="100px">
+                                <option value="vide"></option>
+                                <option value="design">Design</option>
+                                <option value="map">Carte intéractive</option>
+                                <option value="ux">Expérience Utilisateur</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset class="improvements">
+                            <p class ="para_fieldset">What would you like to see improved ?</p>
+                            <input type="checkbox" name="cb_front" value ="front_improv">Front-End Projects<br>
+                            <input type="checkbox" name="cb_back" value ="back_improv">Back-end Projects<br>
+                            <input type="checkbox" name="cb_visual" value ="improv_visual">Data Visualisation<br>
+                            <input type="checkbox" name="cb_chall" value ="improv_chall">Challenges<br>
+                            <input type="checkbox" name="cb_open" value ="improv_open">Open source community<br>
+                            <input type="checkbox" name="cb_gitter" value ="improv_gitter">Gitter help rooms<br>
+                            <input type="checkbox" name="cb_vid" value ="improv_vid">Videos<br>
+                            <input type="checkbox" name="cb_meet" value ="improv_meet">City Meetups<br>
+                            <input type="checkbox" name="cb_wiki" value ="improv_wiki">Wiki<br>
+                            <input type="checkbox" name="cb_forum" value ="improv_forum">Forum<br>
+                            <input type="checkbox" name="cb_add_courses" value ="improv_add_courses">Additional Courses<br>
+
+                        </fieldset>
+
+                        <fieldset class="suggestions">
+                            <p>Suggestions</p>
+                        </fieldset>
+
+                        <fieldset class="submit">
+                            <input type="submit" value="Submit">
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+    
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+
+</html>
