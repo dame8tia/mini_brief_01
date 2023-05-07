@@ -2,101 +2,102 @@
 *{
     font-family: 'Poppins', cursive;
 }
-body{
-    background-color: rgb(63, 47, 147);
-    /*opacity:0.2;*/
-    color : white;
-    text-align: center;
-    
-}
 
-main{
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-color: rgb(63, 47, 147);
+    /*opacity:0.2;*/
+    color : white;       
 }
 
+
+/* Balises du fond*/
 .fond{
     background-image: url("../images/people_3.jpg");
     opacity:0.5;
-    background-color:red ;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    border: 5px red solid;
 }
 
-
-.titre{
-    /*text-align: center;*/
-    color : white;
-    font-size: 16px;
+/* Balises du header*/
+.header{
+    color : white;    
 }
-
-.titre p {
+h1 {
+    font-size:14px;
     margin:0 auto;
 }
-.sous_titre{
+h3 {
     font-style: italic;
-    font-size: 12px;
+    font-size:12px;
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-.formulaire{
+/* balises du main*/
+/*main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+form{
     /*display: flex  ;
     flex-direction: column;
-    width:30vw;*/
+    align-items: center;*/
+    /*width:30vw;*/
     background-color: rgb(27, 10, 62);
     padding:15px;
     opacity:1;
+    border: 5px rgb(56, 171, 94) solid;
 }
-
-.infos_generales{
-    border:none;
-    text-align: left;
-    font-size: 12px;
-}   
-
-
-.current_role{
+fieldset{
+    display: block;
+    margin: auto;
     border:none;
     text-align: left;
     font-size: 12px;
 }
 
-.para_fieldset {
-    margin-bottom:0;
+/*.form_resp {
+    width:75%;
+    float: left;
+}*/
+
+label{
+    display: inline-block;
+}
+/*
+.col_25{
+    width:25%;
+    float:left;
+}
+.col_75 {
+    float:left;
+    width:75%;
+}
+*/
+input, select {
+    width: 90%; /* C'est cette propriété qui fait déconner les checkbox et les radio*/
+}
+#cb {
+    text-align: left; /* ne fonctionne pas, ni le float:left*/
 }
 
-.recommend{
-    border:none;
-    text-align: left;
-    font-size: 12px;
-}
-
-.favorite_feature{
-    border:none;
-    text-align: left;
-    font-size: 12px;
-}
-
-.improvements{
-    border:1px  solid rgb(29, 122, 159);
-    text-align: left;
-    font-size: 12px;
-    border:none;
-}
-
-
-.suggestions{
-    border:1px  solid rgb(127, 159, 29);
-    text-align: left;
-    font-size: 12px;
+textarea {
+    cursor: pointer;
 }
 .submit{
-    background-color: green;
-    text-align: center;
+    background: green;
     font-size: 12px;
+    margin-left: 8px;
+    text-align: center;
+    color:white;   
+    width :90%; 
 }
